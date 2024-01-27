@@ -1,0 +1,16 @@
+h1 {
+    color: red;
+    font-size: 32px;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+body {
+    background-color: rgb(32, 32, 32);
+}

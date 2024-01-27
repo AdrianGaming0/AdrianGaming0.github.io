@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool Botsite</title>
+    <h1 class="header">LINK DISCORD BOT HERE</h1>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script>
+            fetch('https://api.ipify.org?format=json')
+    .then(response => response.json())
+    .then(data => {
+        const publicIpElement = document.getElementById('public-ip');
+        publicIpElement.textContent = data.ip;
+    })
+    .catch(error => {
+        console.error('Error fetching public IP:', error);
+    });
+    </script>
+    <p>this is a test thingy</p>
+    <button onclick="alertButton()">Link Discord Bot</button>
+    <h3>IP:</h3> <h2 id="public-ip"></h2>
+</body>
+
+<script src="core.js"></script>
+
+</html>
